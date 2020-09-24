@@ -16,10 +16,13 @@
 
     <script>
       function printtext() {
-        console.log(text.value);
+        alert(
+          "Спасибо за нажатие на нашу замечательную кнопку. Значение вашего поля — " +
+            document.querySelector("#text").value
+        );
       }
 
-      text.addEventListener("input", printtext);
+      submit.addEventListener("click", printtext);
     </script>
   </body>
 </html>
